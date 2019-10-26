@@ -1,2 +1,2 @@
 # WebService::Mailhog
-Perl module to access Mailhog API
+Perl module for easy access to the [Mailhog](https://github.com/mailhog/MailHog) API
