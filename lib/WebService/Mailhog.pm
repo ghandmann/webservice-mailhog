@@ -1,4 +1,4 @@
-package WebSerice::Mailhog;
+package WebService::Mailhog;
 
 use Mojo::Base -base;
 use Mojo::UserAgent;
@@ -47,7 +47,7 @@ sub search {
 
 =head1 NAME
 
-WebSerice::Mailhog - The great new WebSerice::Mailhog!
+WebService::Mailhog - The great new WebService::Mailhog!
 
 =head1 VERSION
 
@@ -64,9 +64,9 @@ Quick summary of what the module does.
 
 Perhaps a little code snippet.
 
-    use WebSerice::Mailhog;
+    use WebService::Mailhog;
 
-    my $mailHog = WebSerice::Mailhog->new(mailHogUrl => "http://your.mailhog.api:8025");
+    my $mailHog = WebService::Mailhog->new(mailHogUrl => "http://your.mailhog.api:8025");
     ...
 
 =head1 EXPORT
@@ -96,8 +96,8 @@ Sven Eppler, C<< <cpan at sveneppler.de> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-webserice-mailhog at rt.cpan.org>, or through
-the web interface at L<https://rt.cpan.org/NoAuth/ReportBug.html?Queue=WebSerice-Mailhog>.  I will be notified, and then you'll
+Please report any bugs or feature requests to C<bug-WebService-mailhog at rt.cpan.org>, or through
+the web interface at L<https://rt.cpan.org/NoAuth/ReportBug.html?Queue=WebService-Mailhog>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 
@@ -107,7 +107,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc WebSerice::Mailhog
+    perldoc WebService::Mailhog
 
 
 You can also look for information at:
@@ -116,19 +116,19 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker (report bugs here)
 
-L<https://rt.cpan.org/NoAuth/Bugs.html?Dist=WebSerice-Mailhog>
+L<https://rt.cpan.org/NoAuth/Bugs.html?Dist=WebService-Mailhog>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/WebSerice-Mailhog>
+L<http://annocpan.org/dist/WebService-Mailhog>
 
 =item * CPAN Ratings
 
-L<https://cpanratings.perl.org/d/WebSerice-Mailhog>
+L<https://cpanratings.perl.org/d/WebService-Mailhog>
 
 =item * Search CPAN
 
-L<https://metacpan.org/release/WebSerice-Mailhog>
+L<https://metacpan.org/release/WebService-Mailhog>
 
 =back
 
@@ -147,4 +147,4 @@ This is free software, licensed under:
 
 =cut
 
-1; # End of WebSerice::Mailhog
+1; # End of WebService::Mailhog

@@ -7,7 +7,7 @@ use Test::More;
 plan tests => 1;
 
 BEGIN {
-    use_ok( 'WebSerice::Mailhog' ) || print "Bail out!\n";
+    use_ok( 'WebService::Mailhog' ) || print "Bail out!\n";
 }
 
-diag( "Testing WebSerice::Mailhog $WebSerice::Mailhog::VERSION, Perl $], $^X" );
+diag( "Testing WebService::Mailhog $WebService::Mailhog::VERSION, Perl $], $^X" );

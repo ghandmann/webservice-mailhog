@@ -50,7 +50,7 @@ TODO: {
     "placeholder date/time"       => qr(Date/time)
   );
 
-  module_boilerplate_ok('lib/WebSerice/Mailhog.pm');
+  module_boilerplate_ok('lib/WebService/Mailhog.pm');
 
 
 }

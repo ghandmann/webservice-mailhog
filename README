@@ -1,4 +1,4 @@
-WebSerice-Mailhog
+WebService-Mailhog
 
 The README is used to introduce the module and provide instructions on
 how to install the module, any machine dependencies it may have (for
@@ -26,21 +26,21 @@ SUPPORT AND DOCUMENTATION
 After installing, you can find documentation for this module with the
 perldoc command.
 
-    perldoc WebSerice::Mailhog
+    perldoc WebService::Mailhog
 
 You can also look for information at:
 
     RT, CPAN's request tracker (report bugs here)
-        https://rt.cpan.org/NoAuth/Bugs.html?Dist=WebSerice-Mailhog
+        https://rt.cpan.org/NoAuth/Bugs.html?Dist=WebService-Mailhog
 
     AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/WebSerice-Mailhog
+        http://annocpan.org/dist/WebService-Mailhog
 
     CPAN Ratings
-        https://cpanratings.perl.org/d/WebSerice-Mailhog
+        https://cpanratings.perl.org/d/WebService-Mailhog
 
     Search CPAN
-        https://metacpan.org/release/WebSerice-Mailhog
+        https://metacpan.org/release/WebService-Mailhog
 
 
 LICENSE AND COPYRIGHT

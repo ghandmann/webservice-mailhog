@@ -4,10 +4,10 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-    NAME             => 'WebSerice::Mailhog',
+    NAME             => 'WebService::Mailhog',
     AUTHOR           => q{Sven Eppler <cpan@sveneppler.de>},
-    VERSION_FROM     => 'lib/WebSerice/Mailhog.pm',
-    ABSTRACT_FROM    => 'lib/WebSerice/Mailhog.pm',
+    VERSION_FROM     => 'lib/WebService/Mailhog.pm',
+    ABSTRACT_FROM    => 'lib/WebService/Mailhog.pm',
     LICENSE          => 'artistic_2',
     MIN_PERL_VERSION => '5.010001',
     CONFIGURE_REQUIRES => {
@@ -20,7 +20,7 @@ my %WriteMakefileArgs = (
         'Mojolicious'   => '7.0',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES => 'WebSerice-Mailhog-*' },
+    clean => { FILES => 'WebService-Mailhog-*' },
 );
 
 # Compatibility with old versions of ExtUtils::MakeMaker
