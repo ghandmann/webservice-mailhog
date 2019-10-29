@@ -1,8 +1,49 @@
 package WebSerice::Mailhog;
 
-use 5.006;
-use strict;
-use warnings;
+use Mojo::Base -base;
+use Mojo::UserAgent;
+use Mojo::URL;
+use Mojo::JSON qw/j/;
+
+has mailhogHost => sub { die "Required 'mailhogHost' parameter to new missing" };
+
+has ua => sub { Mojo::UserAgent->new() };
+
+sub messages {
+  my $self = shift;
+  my $start = shift || 0;
+  my $limit = shift || 10;
+
+  my $query = Mojo::URL->new($self->mailhogHost);
+  $query->path("/api/v2/messages");
+  $query->query(start => $start, limit => $limit);
+
+  my $res = $self->ua->get($query)->res;
+  if($res->is_error) {
+    die "HTTP Request to mailhog failed!";
+  }
+
+  $res->json;
+}
+
+sub search {
+  my $self = shift;
+  my $kind = shift || die "missing required parameter 'kind'";
+  my $query = shift || "";
+  my $start = shift || 0;
+  my $limit = shift || 10;
+
+  my $requestURL = Mojo::URL->new($self->mailhogHost);
+  $requestURL->path("/api/v2/messages");
+  $requestURL->query(kind => $kind, query => $query, start => $start, limit => $limit);
+
+  my $res = $self->ua->get($requestURL)->res;
+  if($res->is_error) {
+    die "HTTP Request to mailhog failed!";
+  }
+
+  $res->json;
+}
 
 =head1 NAME
 
@@ -25,7 +66,7 @@ Perhaps a little code snippet.
 
     use WebSerice::Mailhog;
 
-    my $foo = WebSerice::Mailhog->new();
+    my $mailHog = WebSerice::Mailhog->new(mailHogUrl => "http://your.mailhog.api:8025");
     ...
 
 =head1 EXPORT
