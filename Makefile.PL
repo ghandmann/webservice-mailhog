@@ -14,7 +14,7 @@ my %WriteMakefileArgs = (
         'ExtUtils::MakeMaker' => '0',
     },
     TEST_REQUIRES => {
-        'Test::More' => '0',
+        'Test::Most' => '0',
     },
     PREREQ_PM => {
         'Mojolicious'   => '7.0',
